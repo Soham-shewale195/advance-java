@@ -58,9 +58,7 @@ public class SessionServlet extends HttpServlet {
 		}
 	}
 
-	private void getSession(boolean b) {
-		// TODO Auto-generated method stub
 		
 	}
 
-}
+
