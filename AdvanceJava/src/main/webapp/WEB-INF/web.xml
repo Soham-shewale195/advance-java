@@ -137,4 +137,44 @@
     <servlet-name>LogoutSevlet</servlet-name>
     <url-pattern>/LogoutSevlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SetUrl</display-name>
+    <servlet-name>SetUrl</servlet-name>
+    <servlet-class>com.servlet.SetUrl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SetUrl</servlet-name>
+    <url-pattern>/SetUrl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetUrl</display-name>
+    <servlet-name>GetUrl</servlet-name>
+    <servlet-class>com.servlet.GetUrl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetUrl</servlet-name>
+    <url-pattern>/GetUrl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SetUpdatepass</display-name>
+    <servlet-name>SetUpdatepass</servlet-name>
+    <servlet-class>com.servlet.SetUpdatepass</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SetUpdatepass</servlet-name>
+    <url-pattern>/SetUpdatepass</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetUpdatepass</display-name>
+    <servlet-name>GetUpdatepass</servlet-name>
+    <servlet-class>com.servlet.GetUpdatepass</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetUpdatepass</servlet-name>
+    <url-pattern>/GetUpdatepass</url-pattern>
+  </servlet-mapping>
 </web-app>
