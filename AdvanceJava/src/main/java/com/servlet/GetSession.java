@@ -21,7 +21,7 @@ public class GetSession extends HttpServlet {
 //		String pass=(String) session.getAttribute("pass");
 		out.print("Hello user :"+user);
 //		out.print("<br>passward :"+pass);
-		 out.print("<br>session id : "+session.getId());
+		out.print("<br>session id : "+session.getId());
 		 
 		 out.print("<form action = 'LogoutSevlet'>");
 		 out.print("<input type='submit' value='Logout'>");

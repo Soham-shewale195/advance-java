@@ -39,7 +39,7 @@ public class LoginServlet1 extends HttpServlet {
 				if(rs.next())
 				{
 					out.println("<h1> Login Succesfully</h1>");
-				   res.sendRedirect("StudentForm.html");  // go to next page
+				    res.sendRedirect("StudentForm.html");  // go to next page
 				   
 				   
 				   
