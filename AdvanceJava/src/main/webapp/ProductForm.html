@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product Details</title>
+</head>
+<body>
+
+<form action="ProductForm.jsp" method="post" style="border: 2px solid #000; border-radius: 15px; padding: 20px; width: 300px;">
+  <label for="name">Product Name:</label><br>
+  <input id="name" type="text" name="txtname" required><br><br>
+
+  <label for="pid">Product ID:</label><br>
+  <input id="pid" type="text" name="intID" required><br><br>
+
+  <label for="price">Product Price:</label><br>
+  <input id="price" type="number" name="floatprice" step="0.01" required><br><br>
+
+  <label for="company">Product Company:</label><br>
+  <input id="company" type="text" name="txtcompany" required><br><br>
+
+  <input type="submit" value="Insert" style="padding: 10px 20px; font-size: 16px;">
+</form>
+
+</body>
+</html>

@@ -7,12 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%
-	String rollno = request.getParameter("txtroll");
+<%
+	
 	String name = request.getParameter("txtname");
-	String phoneno = request.getParameter("txtphone");
-	String city = request.getParameter("txtcity");
-	String email = request.getParameter("txtemail");
+	int id = Integer.parseInt(request.getParameter("intID"));
+	float price = Float.parseFloat(request.getParameter("floatprice"));
+	String company = request.getParameter("txtcompany");
 
 	
 
@@ -24,35 +24,34 @@
 
 
 		// operation perform on database 
-		PreparedStatement st = con.prepareStatement("INSERT INTO studentinfo VALUES (?, ?, ?, ?, ? )"); // (?) is used to pass runtime values in database in praticular columns
+		PreparedStatement st = con.prepareStatement("INSERT INTO product VALUES (?, ?, ?, ? )"); // (?) is used to pass runtime values in database in praticular columns
 
 		// PreparedStatement st=con.prepareStatement("insert into studentinfo values(?,?,?");
 		
-		st.setString(1, rollno);
-		st.setString(2, name);
-		st.setString(3, phoneno);
-		st.setString(4, city);
-		st.setString(5, email);
+		st.setString(1, name);
+		st.setInt(2, id);
+		st.setFloat(3, price);
+		st.setString(4, company);
+		
 		
 
 		int rows = st.executeUpdate();			
 		if (rows > 0) 
 		{
 			out.println("<h1>Data inserted successfully</h1>");
-			response.sendRedirect("DisplayStudent.jsp");  // redirect to student information form
+			response.sendRedirect("DisplayProduct.jsp");  // redirect to student information form
 
 		} 
 		else 
 		{
 			out.println("<h1>Insertion failed</h1>");
 		}
-
-
 	}
 	catch(Exception e1 )
 	{
 		out.println(e1.getMessage());
 	}
 	%>
+
 </body>
 </html>

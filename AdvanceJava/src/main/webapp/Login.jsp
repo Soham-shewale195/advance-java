@@ -25,7 +25,7 @@
 			if(rs.next())
 			{
 				out.println("<h1> Login Succesfully</h1>");
-			   
+			   response.sendRedirect("DisplayStudent.jsp");
 			   
 			   
 				//RequestDispatcher rd=req.getRequestDispatcher("servlet2");
